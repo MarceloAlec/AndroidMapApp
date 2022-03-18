@@ -21,13 +21,8 @@ public class MapActivity extends AppCompatActivity implements OnMapReadyCallback
     private GoogleMap mMap;
     private SupportMapFragment mMapaFragment;
 
-    private PlacesClient mPlaces;
-
-    AutocompleteSupportFragment autocompleteFragment;
     private double mLugarLat;
     private double mLugarLng;
-
-    private FusedLocationProviderClient cliente;
 
     private LatLng mLugarLatLng;
     private String mNombreLugar;
@@ -53,7 +48,6 @@ public class MapActivity extends AppCompatActivity implements OnMapReadyCallback
 
         mMapaFragment = (SupportMapFragment) getSupportFragmentManager().findFragmentById(R.id.map);
         mMapaFragment.getMapAsync(this);
-
 
     }
 
